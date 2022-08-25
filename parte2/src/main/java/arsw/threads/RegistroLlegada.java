@@ -13,7 +13,6 @@ public class RegistroLlegada {
 	public void setGanador(String ganador) {
 		this.ganador = ganador;
 	}
-
 	public int getUltimaPosicionAlcanzada() {
 		return ultimaPosicionAlcanzada;
 	}

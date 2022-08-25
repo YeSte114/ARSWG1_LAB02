@@ -35,7 +35,6 @@ public class Galgo extends Thread {
 					if (ubicacion==1){
 						regl.setGanador(this.getName());
 					}
-
 				}
 				while (estado){
 					object.wait();
