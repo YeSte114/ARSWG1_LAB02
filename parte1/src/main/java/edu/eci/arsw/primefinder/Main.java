@@ -19,7 +19,7 @@ public class Main {
 
 		}
 		for (PrimeFinderThread spft : pft) spft.start();
-		
+
 	}
 	
 }
