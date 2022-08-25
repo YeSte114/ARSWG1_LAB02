@@ -9,6 +9,7 @@ import java.awt.Toolkit;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -24,6 +25,7 @@ import javax.swing.border.EmptyBorder;
  */
 public class Canodromo extends JFrame {
 	private static final long serialVersionUID = 1L;
+	private static ArrayList<Galgo> galgos = new ArrayList<>();
 
 	/**
 	 * Carriles del canodromo
@@ -158,5 +160,9 @@ public class Canodromo extends JFrame {
 	
 	public void winnerDialog(String winner,int total) {
             JOptionPane.showMessageDialog(null, "El ganador fue:" + winner + " de un total de " + total);
-        }	
+	}
+
+	public void agregarGalgo(Galgo galgo){
+		galgos.add(galgo);
+	}
 }
